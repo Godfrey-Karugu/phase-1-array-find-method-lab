@@ -10,13 +10,15 @@ const record = [
 
 
 
-function superbowlWin( array){
-
-  for(let item of array){
+function superbowlWin( item){
+ 
   if(item.result === "W"){
-    return item.year;
+    //console.log( item.year);
+
+    return item.year
   }
 }
 
+record.find(superbowlWin)
 
-}
+
